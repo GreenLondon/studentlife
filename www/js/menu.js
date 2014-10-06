@@ -1,0 +1,13 @@
+$(document).ready(function(){
+ $('.js-menu-button').click(function(){
+ 	$('.js-app-container').toggleClass('open-menu');
+		$('.categories-menu').hide();
+ });
+ $('.menu-item').click(function(){
+ 	$('.js-app-container').toggleClass('open-menu');
+	$('.categories-menu').hide();
+ });
+  $('.categories-button').click(function(){
+ 	$('.categories-menu').toggle();
+ });
+});
