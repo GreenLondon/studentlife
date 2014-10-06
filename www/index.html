@@ -101,10 +101,11 @@
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" >
     document.addEventListener("deviceready", onDeviceReady, false);
-    
+    var gaPlugin;
 
 function onDeviceReady() {
     gaPlugin = window.plugins.gaPlugin;
+	navigator.notification.confirm('GA_PLUGIN would like your permission to collect usage data. No personal or user identifiable data will be collected.', permissionCallback, 'Attention', 'Allow,Deny');
     gaPlugin.init(successHandler, errorHandler, "UA-48430697-1", 10);
 	gaPlugin.trackPage( nativePluginResultHandler, nativePluginErrorHandler, "index.html");
 
