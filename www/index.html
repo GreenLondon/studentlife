@@ -105,7 +105,7 @@
     var gaPlugin;
 
 function onDeviceReady() {
-	alert("device ready");
+	console.log("device ready");
     gaPlugin = window.plugins.gaPlugin;
     gaPlugin.init(successHandler, errorHandler, "UA-48430697-1", 10);
 
@@ -115,12 +115,12 @@ function onDeviceReady() {
 }
 function successHandler()
 {
-    alert("init success");
+    console.log("init success");
 }
 
 function errorHandler()
 {
-    alert("init failed");
+    console.log("init failed");
 }
     </script>
 
