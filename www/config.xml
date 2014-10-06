@@ -10,6 +10,8 @@
     <content src="index.html" />
     <access origin="*" />
 	<feature name="http://api.phonegap.com/1.0/device" />
+	<preference name="phonegap-version" value="3.5.0" />
+	<preference name="permissions" value="none"/>
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
@@ -22,6 +24,7 @@
     <preference name="android-installLocation" value="auto" />
 	<preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="10000" />
+	<preference name="splash-screen-duration" value="10000" />
 	<icon src="res/icon.png" />
 	 <platform name="android">
               <icon src="res/icon/android/icon-36-ldpi.png" density="ldpi" />

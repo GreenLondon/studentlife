@@ -93,7 +93,8 @@
 <!-- .app -->
     
  
-    <script type="text/javascript" src="cordova.js"></script>  
+    <script type="text/javascript" src="cordova.js"></script> 
+	<script type="text/javascript" src="GAPlugin.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/fastclick.js"></script>
     <script type="text/javascript" src="js/pageslider.js"></script>
@@ -105,10 +106,31 @@
 function onDeviceReady() {
     gaPlugin = window.plugins.gaPlugin;
     gaPlugin.init(successHandler, errorHandler, "UA-48430697-1", 10);
+	gaPlugin.trackPage( nativePluginResultHandler, nativePluginErrorHandler, "index.html");
+
 	setTimeout(function() {
         navigator.splashscreen.hide();
     }, 10000);
     }
+	function successHandler()
+{
+    alert("init success");
+}
+
+function errorHandler()
+{
+    alert("init failed");
+}
+
+function nativePluginResultHandler()
+{
+    alert("tracking success");
+}
+
+function nativePluginErrorHandler()
+{
+    alert("tracking failed");
+}
     </script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
