@@ -32,6 +32,16 @@
               <icon src="res/icon/android/icon-72-hdpi.png" density="hdpi" />
               <icon src="res/icon/android/icon-96-xhdpi.png" density="xhdpi" />
      </platform>
+	<platform name="wp8">
+              <icon src="res/icon/wp/ApplicationIcon.png" width="99" height="99" />
+              <!-- tile image -->
+              <icon src="res/icon/wp/Background.png" width="159" height="159" />
+    </platform>
+	<platform name="windows8">
+              <icon src="res/icon/windows8/logo.png" width="150" height="150" />
+              <icon src="res/icon/windows8/smalllogo.png" width="30" height="30" />
+              <icon src="res/icon/windows8/storelogo.png" width="50" height="50" />
+     </platform>
 	<platform name="ios">
               <!-- iOS 7.0+ -->
               <!-- iPhone / iPod Touch  -->
@@ -67,5 +77,6 @@
 	<gap:splash gap:platform="ios" height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
     <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="2008" src="res/screen/ios/screen-ipad-portrait-2x.png" width="1536" />
+	<gap:splash gap:platform="winphone" height="720" src="res/screen/windows-phone/SplashScreenImage.jpg" width="1204" />
 	<gap:plugin name="com.adobe.plugins.gaplugin" />
   </widget>
