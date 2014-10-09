@@ -205,7 +205,7 @@ var app = {
 			
 		var contactUs =
 		    '<div id="contact-info">' +
-			'<h2>Επικοινωνίστε μαζί μας</h2>' +
+			'<h2>Επικοινωνήστε μαζί μας</h2>' +
 			'<br>' +
 		    '<p>Δ: Λάρνακος 127, Αγλαντζιά</p>' +
 			'<p>E: info@studentlife.com.cy</p>' +
