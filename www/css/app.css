@@ -426,3 +426,7 @@ margin: 0 0 20% 0;}
 	border-top:0;
 	border-bottom:0;
 }
+
+iframe {
+height: 0 !important;
+}
