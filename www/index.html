@@ -110,7 +110,7 @@ function onDeviceReady() {
     gaPlugin.init(successHandler, errorHandler, "UA-48430697-1", 10);
 	setTimeout(function() {
         navigator.splashscreen.hide();
-		alert("timeout works");
+		console.log("splashscreen timeout");
     }, 5000);
 }
 function successHandler()
