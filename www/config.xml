@@ -18,12 +18,14 @@
     <preference name="prerendered-icon" value="true" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
-    <preference name="auto-hide-splash-screen" value="false" />
-	<preference name="AutoHideSplashScreen" value="false" />
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="10" />
     <preference name="android-installLocation" value="auto" />
-	<preference name="SplashScreen" value="screen" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="FadeSplashScreen" value="false" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="10000" />
 	<icon src="res/icon.png" />
 	 <platform name="android">
               <icon src="res/icon/android/icon-36-ldpi.png" density="ldpi" />
