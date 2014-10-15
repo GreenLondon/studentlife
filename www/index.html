@@ -103,12 +103,10 @@
     <script type="text/javascript" >
     document.addEventListener("deviceready", onDeviceReady, false);
     var gaPlugin;
-setTimeout(function() {
-        navigator.splashscreen.hide();
-		alert("timeout works");
-    }, 10000);
+	
 function onDeviceReady() {
-	console.log("device ready");
+	alert("device ready");
+	navigator.splashscreen.hide();
     gaPlugin = window.plugins.gaPlugin;
     gaPlugin.init(successHandler, errorHandler, "UA-48430697-1", 10);
 
