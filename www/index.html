@@ -103,14 +103,11 @@
     <script type="text/javascript" >
     document.addEventListener("deviceready", onDeviceReady, false);
     var gaPlugin;
-	
+
 function onDeviceReady() {
 	console.log("device ready");
-	navigator.splashscreen.hide();
     gaPlugin = window.plugins.gaPlugin;
     gaPlugin.init(successHandler, errorHandler, "UA-48430697-1", 10);
-
-	
 }
 function successHandler()
 {
