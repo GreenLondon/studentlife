@@ -80,4 +80,5 @@
     <gap:splash gap:platform="ios" height="2008" src="res/screen/ios/screen-ipad-portrait-2x.png" width="1536" />
 	<gap:splash gap:platform="winphone" height="720" src="res/screen/windows-phone/SplashScreenImage.jpg" width="1204" />
 	<gap:plugin name="com.adobe.plugins.gaplugin" />
+	<gap:plugin name="org.apache.cordova.splashscreen" />
   </widget>
