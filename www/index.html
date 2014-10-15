@@ -108,6 +108,10 @@ function onDeviceReady() {
 	console.log("device ready");
     gaPlugin = window.plugins.gaPlugin;
     gaPlugin.init(successHandler, errorHandler, "UA-48430697-1", 10);
+	setTimeout(function() {
+        navigator.splashscreen.hide();
+		alert("timeout works");
+    }, 5000);
 }
 function successHandler()
 {
