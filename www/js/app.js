@@ -14,7 +14,7 @@ var app = {
 		var hash = window.location.hash.replace(/^.*?#/,'');
 		if (hash == '') {
 			app.getPosts();
-			navigator.splashscreen.hide();
+			
 			majorCounter = 0;
 			mainCounter = 0;
 			latestCounter = 0;

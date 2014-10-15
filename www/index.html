@@ -106,6 +106,7 @@
 	
 function onDeviceReady() {
 	console.log("device ready");
+	navigator.splashscreen.hide();
     gaPlugin = window.plugins.gaPlugin;
     gaPlugin.init(successHandler, errorHandler, "UA-48430697-1", 10);
 
