@@ -26,6 +26,7 @@
     <preference name="FadeSplashScreen" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="10000" />
+	 <icon src="res/icon/icon.png"/>
 	 <platform name="android">
     <icon src="res/icon/android/icon-36-ldpi.png"  density="ldpi"/>
     <icon src="res/icon/android/icon-48-mdpi.png"  density="mdpi"/>
