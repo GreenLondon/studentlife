@@ -26,18 +26,15 @@
     <preference name="FadeSplashScreen" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="10000" />
-    <icon src="res/icon/android/icon-36-ldpi.png"  gap:platform="android" gap:qualifier="ldpi"/>
-    <icon src="res/icon/android/icon-48-mdpi.png"  gap:platform="android" gap:qualifier="mdpi"/>
-    <icon src="res/icon/android/icon-72-hdpi.png"  gap:platform="android" gap:qualifier="hdpi"/>
-    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android" gap:qualifier="xhdpi"/>
+	 <platform name="android">
+    <icon src="res/icon/android/icon-36-ldpi.png"  density="ldpi"/>
+    <icon src="res/icon/android/icon-48-mdpi.png"  density="mdpi"/>
+    <icon src="res/icon/android/icon-72-hdpi.png"  density="hdpi"/>
+    <icon src="res/icon/android/icon-96-xhdpi.png"  density="xhdpi"/>
+	 </platform>
     
-	<icon src="res/icon/wp/ApplicationIcon.png" width="99" height="99" gap:platform="winphone" />
-              <!-- tile image -->
-   <icon src="res/icon/wp/Background.png" width="159" height="159"  gap:platform="winphone" gap:role="background"/>
-
-   <icon src="res/icon/windows8/logo.png" width="150" height="150" gap:platform="winphone" gap:role="background"/>
-   <icon src="res/icon/windows8/smalllogo.png" width="30" height="30" gap:platform="winphone"/>
-   <icon src="res/icon/windows8/storelogo.png" width="50" height="50" gap:platform="winphone" />
+	
+    <platform name="ios">
               <!-- iOS 7.0+ -->
               <!-- iPhone / iPod Touch  -->
               <icon src="res/icon/ios/icon-60.png" width="60" height="60" gap:platform="ios"/>
@@ -61,6 +58,7 @@
               <!-- iPad Spotlight and Settings Icon -->
               <icon src="res/icon/ios/icon-50.png" width="50" height="50" gap:platform="ios"/>
               <icon src="res/icon/ios/icon-50@2x.png" width="100" height="100" gap:platform="ios"/>
+	</platform>
 			  
     <gap:splash gap:density="ldpi" gap:platform="android" src="res/screen/android/screen-ldpi-portrait.png" />
     <gap:splash gap:density="mdpi" gap:platform="android" src="res/screen/android/screen-mdpi-portrait.png" />
