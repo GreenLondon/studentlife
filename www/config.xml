@@ -26,17 +26,18 @@
     <preference name="FadeSplashScreen" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="10000" />
-              <icon src="res/icon/android/icon-36-ldpi.png"  gap:platform="android" gap:density="ldpi" />
-              <icon src="res/icon/android/icon-48-mdpi.png"  gap:platform="android" gap:density="mdpi" />
-              <icon src="res/icon/android/icon-72-hdpi.png"  gap:platform="android" gap:density="hdpi" />
-              <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android" gap:density="xhdpi" />
-              <icon src="res/icon/wp/ApplicationIcon.png" width="99" height="99" gap:platform="winphone" />
+    <icon src="res/icon/android/icon-36-ldpi.png"  gap:platform="android" gap:qualifier="ldpi"/>
+    <icon src="res/icon/android/icon-48-mdpi.png"  gap:platform="android" gap:qualifier="mdpi"/>
+    <icon src="res/icon/android/icon-72-hdpi.png"  gap:platform="android" gap:qualifier="hdpi"/>
+    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android" gap:qualifier="xhdpi"/>
+    
+	<icon src="res/icon/wp/ApplicationIcon.png" width="99" height="99" gap:platform="winphone" />
               <!-- tile image -->
-              <icon src="res/icon/wp/Background.png" width="159" height="159"  gap:platform="winphone" gap:role="background"/>
+   <icon src="res/icon/wp/Background.png" width="159" height="159"  gap:platform="winphone" gap:role="background"/>
 
-              <icon src="res/icon/windows8/logo.png" width="150" height="150" gap:platform="winphone" gap:role="background"/>
-              <icon src="res/icon/windows8/smalllogo.png" width="30" height="30" gap:platform="winphone"/>
-              <icon src="res/icon/windows8/storelogo.png" width="50" height="50" gap:platform="winphone" />
+   <icon src="res/icon/windows8/logo.png" width="150" height="150" gap:platform="winphone" gap:role="background"/>
+   <icon src="res/icon/windows8/smalllogo.png" width="30" height="30" gap:platform="winphone"/>
+   <icon src="res/icon/windows8/storelogo.png" width="50" height="50" gap:platform="winphone" />
               <!-- iOS 7.0+ -->
               <!-- iPhone / iPod Touch  -->
               <icon src="res/icon/ios/icon-60.png" width="60" height="60" gap:platform="ios"/>
