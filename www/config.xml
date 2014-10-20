@@ -27,11 +27,40 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="10000" />
 	<icon src="res/icon/icon.png"/>
-              <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
-              <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
-              <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
-              <icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
-              
+              <icon src="res/icon/android/icon-36-ldpi.png"  gap:platform="android" gap:density="ldpi" />
+              <icon src="res/icon/android/icon-48-mdpi.png"  gap:platform="android" gap:density="mdpi" />
+              <icon src="res/icon/android/icon-72-hdpi.png"  gap:platform="android" gap:density="hdpi" />
+              <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android" gap:density="xhdpi" />
+              <icon src="res/icon/wp/ApplicationIcon.png" width="99" height="99" gap:platform="winphone" />
+              <!-- tile image -->
+              <icon src="res/icon/wp/Background.png" width="159" height="159"  gap:platform="winphone" gap:role="background"/>
+
+              <icon src="res/icon/windows8/logo.png" width="150" height="150" gap:platform="winphone" gap:role="background"/>
+              <icon src="res/icon/windows8/smalllogo.png" width="30" height="30" gap:platform="winphone"/>
+              <icon src="res/icon/windows8/storelogo.png" width="50" height="50" gap:platform="winphone" />
+              <!-- iOS 7.0+ -->
+              <!-- iPhone / iPod Touch  -->
+              <icon src="res/icon/ios/icon-60.png" width="60" height="60" gap:platform="ios"/>
+              <icon src="res/icon/ios/icon-60@2x.png" width="120" height="120" gap:platform="ios"/>
+              <!-- iPad -->
+              <icon src="res/icon/ios/icon-76.png" width="76" height="76" gap:platform="ios"/>
+              <icon src="res/icon/ios/icon-76@2x.png" width="152" height="152" gap:platform="ios"/>
+              <!-- iOS 6.1 -->
+              <!-- Spotlight Icon -->
+              <icon src="res/icon/ios/icon-40.png" width="40" height="40" gap:platform="ios"/>
+              <icon src="res/icon/ios/icon-40@2x.png" width="80" height="80" gap:platform="ios"/>
+              <!-- iPhone / iPod Touch -->
+              <icon src="res/ios/icon.png" width="57" height="57" gap:platform="ios"/>
+              <icon src="res/ios/icon@2x.png" width="114" height="114" gap:platform="ios"/>
+              <!-- iPad -->
+              <icon src="res/icon/ios/icon-72.png" width="72" height="72" gap:platform="ios"/>
+              <icon src="res/icon/ios/icon-72@2x.png" width="144" height="144" gap:platform="ios"/>
+              <!-- iPhone Spotlight and Settings Icon -->
+              <icon src="res/icon/ios/icon-small.png" width="29" height="29" gap:platform="ios"/>
+              <icon src="res/icon/ios/icon-small@2x.png" width="58" height="58" gap:platform="ios"/>
+              <!-- iPad Spotlight and Settings Icon -->
+              <icon src="res/icon/ios/icon-50.png" width="50" height="50" gap:platform="ios"/>
+              <icon src="res/icon/ios/icon-50@2x.png" width="100" height="100" gap:platform="ios"/>
 			  
     <gap:splash gap:density="ldpi" gap:platform="android" src="res/screen/android/screen-ldpi-portrait.png" />
     <gap:splash gap:density="mdpi" gap:platform="android" src="res/screen/android/screen-mdpi-portrait.png" />
