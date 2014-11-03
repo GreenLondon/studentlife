@@ -72,6 +72,7 @@ li.topcoat-list__item a {
     color: #333;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent; /* For some Androids */
+	text-decoration: none !important;
 }
 
 .app-menu .topcoat-list__item a {
