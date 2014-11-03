@@ -145,12 +145,13 @@ var app = {
 				$.each(data, function(index, value) {
 					var post_tags = value.terms.post_tag;
 					var category = value.terms.category[0].name;
-					$('ul.topcoat-list').append('<li class="topcoat-list__item">' +
+					$('ul.topcoat-list').append('<li class="topcoat-list__item category-item">' +
 			    	'<a class="view-link" href="#'+value.ID+'">' +
 			      	'<img src="'+value.featured_image.source+'" /><br>' +
 			      	'<h3>'+value.title+'</h3></a>' +
 			      	'<p>'+value.excerpt+'</p></li>');
 			    });
+				
 				/*pageHeight=$('.page').height();
 				alert($('#container').height());
 				alert($('.page').height());*/
@@ -195,7 +196,7 @@ var app = {
     		'<div class="home"><div id="featured-main"><div class="main-story"></div><div class="sub-stories"></div></div><ul class="topcoat-list"></ul><div class="banner"></div></div>';
 			
 	    var categoryPage =
-    		'<div class="home"><ul class="topcoat-list"></ul></div>';
+    		'<div class="home"><div class="loader"><img src="www/images/loader.gif"/></div><ul class="topcoat-list categories-loaded"></ul></div>';
 
 		var singlePost =
 		    '<div><article class="single-post">' +

@@ -437,3 +437,11 @@ width: 0 !important;
 .wp-smiley{
 	max-width:15px !important;
 }
+
+.loader {
+text-align: center;
+}
+
+.categories-loaded {
+display: none;
+}

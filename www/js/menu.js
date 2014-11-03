@@ -11,4 +11,10 @@ $(document).ready(function(){
   $('.categories-button').click(function(){
  	$('.categories-menu').toggle();
  });
+ setTimeout(function() {
+ 	$('.loader').hide();
+}, 8000);
+ setTimeout(function() {
+	$('.categories-loaded').show();
+},8500);
 });
