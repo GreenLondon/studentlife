@@ -156,6 +156,10 @@ var app = {
 				alert($('#container').height());
 				alert($('.page').height());*/
 			},
+    complete: function(){
+        $('.loader').hide();
+		$('.categories-loaded').removeClass('hidden_div');
+    },
 			error: function(error){
 				console.log(error);
 			}
@@ -196,7 +200,7 @@ var app = {
     		'<div class="home"><div id="featured-main"><div class="main-story"></div><div class="sub-stories"></div></div><ul class="topcoat-list"></ul><div class="banner"></div></div>';
 			
 	    var categoryPage =
-    		'<div class="home"><div class="loader"><img src="www/images/loader.gif"/></div><ul class="topcoat-list categories-loaded"></ul></div>';
+    		'<div class="home"><div class="loader"><img src="www/images/loader.gif"/></div><ul class="topcoat-list categories-loaded hidden_div"></ul></div>';
 
 		var singlePost =
 		    '<div><article class="single-post">' +

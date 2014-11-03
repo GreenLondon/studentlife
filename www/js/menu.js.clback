@@ -11,8 +11,9 @@ $(document).ready(function(){
   $('.categories-button').click(function(){
  	$('.categories-menu').toggle();
  });
-       jQuery('categories-loaded').removeClass('hidden_div');
+
+ 	$('.loader').hide();
+
+	$('.categories-loaded').show();
+
 });
-jQuery(window).load (function () { 
-      jQuery('categories-loaded').removeClass('hidden_div');
-  });
