@@ -187,6 +187,10 @@ var app = {
 
 		
 			},
+			    complete: function(){
+        			$('.loader').hide();
+					$('#single-post .single-post').removeClass('hidden_div');
+    		},
 			error: function(error){
 				console.log(error);
 			}
@@ -203,7 +207,7 @@ var app = {
     		'<div class="home"><div class="loader"><img src="www/images/loader.gif"/></div><ul class="topcoat-list categories-loaded hidden_div"></ul></div>';
 
 		var singlePost =
-		    '<div><article class="single-post">' +
+			'<div id="single-post"><div class="loader"><img src="www/images/loader.gif"/></div> <article class="single-post hidden_div">' +
 		    '<h2 class="title"></h2>' +
 			'<h4 class="author"></h4>' +
 		    '<div class="content"></div>' +
