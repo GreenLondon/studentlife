@@ -73,14 +73,9 @@ li.topcoat-list__item a {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent; /* For some Androids */
 	text-decoration: none !important;
-}
-
-li.topcoat-list__item a:active {
-    -webkit-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
-  -webkit-transform: scale3d(0.9, 0.9, 1);
-    background: none !important;
 }
 
 .app-menu .topcoat-list__item a {
@@ -89,6 +84,10 @@ display: block;
 padding: 10%;
 font-size: 20px;
 color:#FFFFFF;
+}
+
+.app-menu .topcoat-list__item a:active {
+background: #98b622 !important;
 }
 
 p.author{
