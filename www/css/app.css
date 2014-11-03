@@ -74,6 +74,8 @@ li.topcoat-list__item a {
 }
 
 li.topcoat-list__item a:active {
+	  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
     background: none !important;
 }
 
