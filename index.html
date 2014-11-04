@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="www/css/app.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,greek' rel='stylesheet' type='text/css'>
   </head>
-  <body onload="startApp()">
+  <body>
 
 <div class="app js-app">
     <!--Hidden menu-->
@@ -93,12 +93,12 @@
 	<script type="text/javascript" src="www/js/app.js"></script>
     <script type="text/javascript" >
     document.addEventListener("deviceready", onDeviceReady, false);
-    var gaPlugin;
+    //var gaPlugin;
 
 function onDeviceReady() {
 	console.log("device ready");
-    gaPlugin = window.plugins.gaPlugin;
-    gaPlugin.init(successHandler, errorHandler, "UA-48430697-1", 10);
+    /*gaPlugin = window.plugins.gaPlugin;
+    gaPlugin.init(successHandler, errorHandler, "UA-48430697-1", 10);*/
 	setTimeout(function() {
         navigator.splashscreen.hide();
 		console.log("splashscreen timeout");

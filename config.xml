@@ -10,7 +10,6 @@
     <content src="index.html" />
     <access origin="*" />
 	<gap:plugin name="org.apache.cordova.device" />
-	<gap:plugin name="com.adobe.plugins.gaplugin" />
 	<gap:plugin name="org.apache.cordova.splashscreen" />
 	<preference name="phonegap-version" value="3.5.0" />
 	<preference name="permissions" value="none"/>
