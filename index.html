@@ -90,14 +90,16 @@
     <script type="text/javascript" src="www/js/pageslider.js"></script>
     <script type="text/javascript" src="www/js/menu.js"></script>
 	<script type="text/javascript" src="www/js/app.js"></script>
+	<script type="text/javascript" src="plugins/com.phonegap.plugin.statusbar/www/statusbar.js"></script>
+	<script type="text/javascript" src="plugins/com.adobe.plugins.GAPlugin/www/GAPlugin.js"></script>
     <script type="text/javascript" >
     document.addEventListener("deviceready", onDeviceReady, false);
-    //var gaPlugin;
+    var gaPlugin;
 
 function onDeviceReady() {
 	console.log("device ready");
-    /*gaPlugin = window.plugins.gaPlugin;
-    gaPlugin.init(successHandler, errorHandler, "UA-48430697-1", 10);*/
+    gaPlugin = window.plugins.gaPlugin;
+    gaPlugin.init(successHandler, errorHandler, "UA-48430697-1", 10);
 	setTimeout(function() {
         navigator.splashscreen.hide();
 		console.log("splashscreen timeout");

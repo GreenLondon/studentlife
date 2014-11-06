@@ -11,6 +11,7 @@
     <access origin="*" />
 	<gap:plugin name="org.apache.cordova.device" />
 	<gap:plugin name="org.apache.cordova.splashscreen" />
+	<gap:plugin name="com.phonegap.plugin.statusbar" />
 	<preference name="phonegap-version" value="3.5.0" />
 	<preference name="permissions" value="none"/>
     <preference name="orientation" value="portrait" />
@@ -27,6 +28,7 @@
     <preference name="FadeSplashScreen" value="false" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="10000" />
+	<preference name="StatusBarOverlaysWebView" value="false" />
 	<icon src="icon.png"/>
     <icon src="www/res/icon/android/icon-36-ldpi.png"  gap:platform="android" gap:qualifier="ldpi"/>
     <icon src="www/res/icon/android/icon-48-mdpi.png"  gap:platform="android" gap:qualifier="mdpi"/>
