@@ -126,7 +126,11 @@ var app = {
 			},
     complete: function(){
         $('.loader').hide();
-		$('.categories-loaded').removeClass('hidden_div');
+		$('#featured-main').removeClass('hidden_div');
+		$('.main-story').removeClass('hidden_div');
+		$('.sub-stories').removeClass('hidden_div');
+		$('.topcoat-list').removeClass('hidden_div');
+		$('.banner').removeClass('hidden_div');
     },
 			error: function(error){
 				console.log(error);
@@ -205,7 +209,7 @@ var app = {
 
 	route: function(event) {
 		var homePage =
-    		'<div class="home"><div class="loader"><img src="www/images/loader.gif"/></div> <div id="featured-main" class="hidden_div"><div class="main-story"></div><div class="sub-stories"></div></div><ul class="topcoat-list hidden_div"></ul><div class="banner hidden_div"></div></div>';
+    		'<div class="home"><div class="loader"><img src="www/images/loader.gif"/></div><div id="featured-main" class="hidden_div"><div class="main-story hidden_div"></div><div class="sub-stories hidden_div"></div></div><ul class="topcoat-list hidden_div"></ul><div class="banner hidden_div"></div></div>';
 			
 	    var categoryPage =
     		'<div class="home"><div class="loader"><img src="www/images/loader.gif"/></div><ul class="topcoat-list categories-loaded hidden_div"></ul></div>';
