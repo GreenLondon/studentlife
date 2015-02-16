@@ -9,9 +9,10 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-	<gap:plugin name="org.apache.cordova.device" />
-	<gap:plugin name="org.apache.cordova.splashscreen" />
-	<gap:plugin name="com.phonegap.plugin.statusbar" />
+	<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
+	<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
+	<gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
+	<gap:plugin name="com.adobe.plugins.gaplugin" version="2.4.0" />
 	<preference name="phonegap-version" value="3.5.0" />
 	<preference name="permissions" value="none"/>
     <preference name="orientation" value="portrait" />
