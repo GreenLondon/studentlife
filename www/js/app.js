@@ -201,7 +201,7 @@ var app = {
 
 	route: function(event) {
 		var homePage =
-    		'<div class="home"><div class="loader"><img src="www/images/loader.gif"/></div><div id="featured-main" class="hidden_div"><div class="main-story hidden_div"></div><div class="sub-stories hidden_div"></div></div><ul class="topcoat-list hidden_div"></ul><div class="banner hidden_div"></div></div>';
+    		'<div class="home"><div id="featured-main"><div class="main-story"></div><div class="sub-stories"></div></div><ul class="topcoat-list"></ul><div class="banner"></div></div>';
 			
 	    var categoryPage =
     		'<div class="home"><div class="loader"><img src="www/images/loader.gif"/></div><ul class="topcoat-list categories-loaded hidden_div"></ul></div>';
