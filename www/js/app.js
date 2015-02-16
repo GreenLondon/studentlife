@@ -124,14 +124,6 @@ var app = {
 				alert($('#container').height());
 				alert($('.page').height());*/
 			},
-    complete: function(){
-        $('.loader').hide();
-		$('#featured-main').removeClass('hidden_div');
-		$('.main-story').removeClass('hidden_div');
-		$('.sub-stories').removeClass('hidden_div');
-		$('.topcoat-list').removeClass('hidden_div');
-		$('.banner').removeClass('hidden_div');
-    },
 			error: function(error){
 				console.log(error);
 			}
