@@ -124,10 +124,6 @@ var app = {
 				alert($('#container').height());
 				alert($('.page').height());*/
 			},
-    complete: function(){
-        $('.loader').hide();
-		$('#home_screen').removeClass('hidden_div');
-    },
 			error: function(error){
 				console.log(error);
 			}
@@ -196,13 +192,10 @@ var app = {
 			    complete: function(){
         			$('.loader').hide();
 					$('#single-post .single-post').removeClass('hidden_div');
-					$('#single-post .single-post .content img').each(function() {
-					imgDataSrc=$(this).attr('data-src');
-					$(this).attr('src',imgDataSrc);
-					$(this).removeAttr('data-src');
-					$(this).removeAttr('data-lazy-type');
-					});
 				
+					imgDataSrc=$('.lazy-hidden').attr('src');
+					console.log(imgDataSrc);
+
     		},
 			error: function(error){
 				console.log(error);
@@ -214,7 +207,7 @@ var app = {
 
 	route: function(event) {
 		var homePage =
-    		'<div class="home"><div class="loader"><img src="www/images/loader.gif"/></div><div id="home_screen" class="hidden_div"><div id="featured-main"><div class="main-story"></div><div class="sub-stories"></div></div><ul class="topcoat-list"></ul><div class="banner"></div></div></div>';
+    		'<div class="home"><div id="featured-main"><div class="main-story"></div><div class="sub-stories"></div></div><ul class="topcoat-list"></ul><div class="banner"></div></div>';
 			
 	    var categoryPage =
     		'<div class="home"><div class="loader"><img src="www/images/loader.gif"/></div><ul class="topcoat-list categories-loaded hidden_div"></ul></div>';
